@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+            Desing
+
+*/
+
+:root{
+    --colorPrincipal: rgb(241, 10, 145);
+    --colorSecundario: rgb(15, 169, 240);
+    --ColorDetalles: rgb(58, 8, 240);
+    --ColorNegro: black;
+    --ColorBlanco: white;
+}
+
+/*
+            FONTS
+
+*/
+
+@font-face {
+    font-family: "PlayFair" ;
+    src: url(../diseño/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Anton" ;
+    src: url(../diseño/fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Trispace";
+    src: url(../diseño/fonts/Trispace-VariableFont_wdth\,wght.ttf);
+}
+
+
+
+  @media only screen and (max-width: 375px), screen and (min-width: 376px) and (max-width: 768px) 
+    {
+
+    body{
+        width: 100%;
+        height: auto;
+    }
+    
+    .menu-list{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .menu-responsive{
+        visibility: visible;
+        width: 100%;
+        height: 1cm;
+        margin-top: 1cm;
+        margin-left: 8cm;
+    }
+
+    .menu-responsive img{
+        width: 30px;
+        height: 30px;
+    }
+/*
+            MAIN
+
+*/
+    .main{
+        padding: 0px;
+        margin: 0;
+    }
+    #main_home{
+        margin-top: 2cm;
+        height: 2cm;
+
+    }
+    #home_titulo h2{
+        font-family: "Anton" ;
+        font-size: 3em ; 
+        margin: 0;
+    }
+    #home_titulo h3{
+        font-family: "Anton" ;
+        font-size: 1em ; 
+  
+    }
+    /*SECCION ABOUT*/
+ 
+
+
+    .about_titulo h3{
+        font-family: "PlayFair" ;
+        color: var(--colorPrincipal);    
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    
+    #about_contenido p{
+        font-family: "Trispace";
+        font-size: .5em;
+    }
+    
+    #parrafo_about{
+        visibility: hidden;
+    }
+
+    /*SECCION skills*/
+    .skills_titulo h3{
+        font-family: "PlayFair" ;
+        color: var(--colorPrincipal);    
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    
+
+    .skills_contenido{
+        margin-top: 1cm;
+        width: 130px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+
+
+
+    .skills_contenido img{
+        width: 40px;
+        height: 40px;
+        
+    }
+    
+    /*SECCION projects*/
+
+    .main_projects{
+        height: 10cm;
+    }
+
+    .projects_titulo{
+        height: 1cm;
+    }
+
+    .projects_titulo h3{
+        font-family: "PlayFair" ;
+        color: var(--colorPrincipal);    
+        font-size: 2em;
+        font-weight: bolder;
+
+    }    
+
+
+
+    .projects_contenido{
+        margin-top: .5cm;
+        height: 10cm;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .projects_contenido ol{
+
+        width: 100%;
+        margin-left: -25px;
+        height: 5cm;
+    }
+
+    .projects_contenido li{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 50%;
+        margin-top: .3cm;
+        height: 3cm;
+
+    }
+
+    .card-body{
+        height: 70px;
+    }
+
+    .card-text{
+        visibility: hidden;
+    }
+    .projects_contenido img{
+        width: 150px;
+        height: 60px;
+    }
+
+    /*SECCION contact*/
+
+    .contact_titulo h3{
+        font-family: "PlayFair" ;
+        color: var(--colorPrincipal);    
+        font-size: 2em;
+        font-weight: bolder;
+        height: 1cm;
+    }    
+
+
+    .contact_contenido input{
+        width: auto;
+    }
+    .contact_contenido textarea{
+        width: auto;
+        height: 100px;
+        margin-top: 1cm;
+    }
+
+    .contact_contenido button{
+        width: auto;
+        height: 1cm;
+        margin-top: 1cm;
+    
+    
+        font-size: 1em;
+        font-family: "Trispace";
+        font-weight: bold;
+    }
+
+  }

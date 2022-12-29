@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+            Desing
+
+*/
+
+:root{
+    --colorPrincipal: rgb(241, 10, 145);
+    --colorSecundario: rgb(15, 169, 240);
+    --ColorDetalles: rgb(58, 8, 240);
+    --ColorNegro: black;
+    --ColorBlanco: white;
+}
+
+
+/*
+            FONTS
+
+*/
+
+@font-face {
+    font-family: "PlayFair" ;
+    src: url(../diseño/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Anton" ;
+    src: url(../diseño/fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Trispace";
+    src: url(../diseño/fonts/Trispace-VariableFont_wdth\,wght.ttf);
+}
+
+
+
+/*
+            Body
+
+*/
+
+body{
+
+    width: 100%;
+    height: 1700px;
+}
+
+
+.menu-responsive{
+    visibility: hidden;
+    height: 0;
+}
+/*
+            HEADER
+
+*/
+header{
+    width: 100%;
+    height: 4cm;
+    background-color: var(--ColorNegro);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header_idiomas{
+    width: 95%;
+    height: 1cm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.header_idiomas img{
+    width: 20px;
+    height: 20px;
+    margin-left: 0.5cm;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 95%;
+    height: 3cm;
+
+
+}
+
+.nav_titulo{
+    display: flex;
+    align-items: center;
+    width: 55%;
+    margin-left: 0.5cm;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 1cm;
+    border-right: 1px solid var(--ColorDetalles);
+    padding: 10px; 
+  
+}
+
+
+nav li a{
+    text-decoration: none;
+    color:  var(--colorPrincipal);
+    font-family: "Anton";
+    font-size: larger;
+ 
+}
+
+nav li a:hover{
+    font-size: 1.5em;
+    color:  var(--colorPrincipal);
+}
+
+
+nav li img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/*
+            MAIN
+
+*/
+
+main{
+    padding: 30px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    background-color: var(--colorSecundario);
+    background-size: 48px 48px;
+    background-image: radial-gradient(
+        transparent 20px,
+        #ffffff 20px,
+        #ffffff 24px,
+        transparent 24px
+    ),
+    radial-gradient(
+        transparent 20px,
+        #ffffff 20px,
+        #ffffff 24px,
+        transparent 24px
+    );
+    background-position: 0 0 , 24px 24px;
+
+
+
+
+}
+.main_home{
+    background-color: transparent;
+
+    width: 70%;
+    height: 400px;
+    border-radius: 25px;
+    padding: 25px;
+    border: 1px solid var(--colorNegro);
+}
+
+
+
+#home_titulo h2{
+    font-family: "Anton" ;
+    font-size: 6em;
+    margin-top: 3cm;
+}
+
+#home_titulo h3{
+    font-family: "Anton" ;
+    font-size: 2em;
+    float: right;
+}
+/*SECCION ABOUT*/
+
+#main_about{
+    margin-top: 8cm;
+    width: 70%;
+    height: 600px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: var(--ColorBlanco);
+    opacity: 85%;
+}
+
+#about_titulo{
+    width: 100%;
+    height: 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about_titulo h3{
+    font-family: "PlayFair" ;
+    color: var(--colorPrincipal);
+    font-size: 3em;
+}
+
+#about_contenido{
+    margin-top: 1cm;
+    height: 300px;
+    font-size: 2em;
+}
+#about_contenido p{
+    font-family: "Trispace";
+    font-size: 0.75em;
+}
+
+
+
+
+/*SECCION skills*/
+
+.main_skills{
+    margin-top: 3cm;
+    width: 70%;
+    height: 400px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: var(--ColorBlanco);
+    opacity: 85%;
+}
+
+.skills_titulo{
+    width: 100%;
+    height: 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills_titulo h3{
+    font-family: "PlayFair" ;
+    color: var(--colorPrincipal);
+    font-size: 3em;
+}
+
+.skills_contenido{
+    margin-top: 1cm;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.skills_contenido ol{
+    list-style-type: none;
+}
+.skills_contenido li{
+    margin-bottom: 0.5cm;
+}
+
+.skills_contenido img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+/*SECCION projects*/
+
+.main_projects{
+    margin-top: 3cm;
+    width: 70%;
+    height: auto;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: var(--ColorBlanco);
+    opacity: 85%;
+}
+
+.projects_titulo{
+    width: 100%;
+    height: 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects_titulo h3{
+    font-family: "PlayFair" ;
+    color: var(--colorPrincipal);
+    font-size: 3em;
+}
+
+.projects_contenido{
+    margin-top: 3cm;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+
+
+}
+
+.projects_contenido ol{
+    list-style-type: none;
+}
+
+.projects_contenido li{
+    margin-bottom: 7cm;
+    width: 300px;
+    height: 200px;
+
+}
+.projects_contenido img{
+    width: 300px;
+    height: 250px;
+}
+
+
+.card-text{
+    font-size: 1em;
+}
+/*SECCION contact*/
+
+.main_contact{
+    margin-top: 3cm;
+    width: 70%;
+    height: 500px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: var(--ColorBlanco);
+    opacity: 85%;
+}
+
+.contact_titulo{
+    width: 100%;
+    height: 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_titulo h3{
+    font-family: "PlayFair" ;
+    color: var(--colorPrincipal);
+    font-size: 3em;
+
+}
+
+
+.contact_contenido form{
+    margin-top: 1cm;
+    flex-direction: column;
+
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    
+
+    align-items: center;
+}
+
+.contact_contenido label{
+    font-size: 1em;
+    font-family: "Trispace";
+}
+
+.contact_contenido input{
+    width: 500px;
+}
+.contact_contenido textarea{
+    width: 500px;
+    height: 100px;
+    margin-top: 1cm;
+}
+
+
+.contact_contenido textarea::placeholder{
+    font-size: 1em;
+    font-family: "Trispace";
+}
+
+.contact_contenido button{
+    width: 500px;
+    height: 1cm;
+    margin-top: 1cm;
+
+
+    font-size: 1em;
+    font-family: "Trispace";
+    font-weight: bold;
+}
+/*SECCION redes*/
+
+.main_redes{
+    margin-top: 3cm;
+    width: 70%;
+    height: 100px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: var(--ColorBlanco);
+    opacity: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces_redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.enlaces_redes img{
+ width: 40px;
+ height: 40px;
+}
