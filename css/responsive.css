@@ -43,7 +43,7 @@
     {
 
     body{
-        width: 100%;
+        width: auto;
         height: auto;
     }
     
@@ -54,10 +54,10 @@
 
     .menu-responsive{
         visibility: visible;
-        width: 100%;
+        width: 0px;
+        float:left;
         height: 1cm;
         margin-top: 1cm;
-        margin-left: 8cm;
     }
 
     .menu-responsive img{
