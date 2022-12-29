@@ -204,7 +204,7 @@ main{
     opacity: 85%;
 }
 
-#about_titulo{
+.about_titulo{
     width: 100%;
     height: 1cm;
     display: flex;
@@ -212,18 +212,18 @@ main{
     justify-content: center;
 }
 
-#about_titulo h3{
+.about_titulo h3{
     font-family: "PlayFair" ;
     color: var(--colorPrincipal);
     font-size: 3em;
 }
 
-#about_contenido{
+.about_contenido{
     margin-top: 1cm;
     height: 300px;
     font-size: 2em;
 }
-#about_contenido p{
+.about_contenido p{
     font-family: "Trispace";
     font-size: 0.75em;
 }
