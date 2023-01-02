@@ -54,16 +54,81 @@
 
     .menu-responsive{
         visibility: visible;
-        width: 0px;
-        float:left;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         height: 1cm;
         margin-top: 1cm;
+
     }
 
     .menu-responsive img{
         width: 30px;
         height: 30px;
+
     }
+
+    
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    padding: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    background: var(--ColorNegro);
+}
+
+.modal-presentacion, .es-visible{
+    opacity: 1;
+    visibility:visible;
+}
+
+
+.modal .modal-contenido{
+    position: relative;
+    max-height:  400px;
+    max-width: 600px;
+    background: var(--ColorBlanco);
+    cursor:default;
+    border-radius: 5px;
+
+}
+
+
+
+
+.modal .modal-contenido header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+}
+
+
+.modal .modal-contenido header .cerrar-modal{
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.grupo-botones{
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
 /*
             MAIN
 
@@ -117,7 +182,7 @@
     
 
     .skills_contenido{
-        margin-left: 1cm;
+        margin-left: .2cm;
         margin-top: 1cm;
         width: 130px;
         height: 300px;

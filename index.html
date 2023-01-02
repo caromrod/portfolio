@@ -21,22 +21,38 @@
                 
         </div>
         <div class="menu-responsive">
-            <button type="menu"><img src="./diseño/img/menu.svg"></button>
+            <button type="menu"  data-open="modal-presentacion" id="PrimerModal"><img src="./diseño/img/menu.svg"></button>
         </div>
         <nav>
 
             <div class="menu-list">
                 <ul >
-                    <li><a href="#main_about">About me</a></li>
+                    <li><a href="#main_about">Sobre mi</a></li>
                     <li><a href="#main_skills">Skills</a></li>
-                    <li><a href="#main_projects">Projects</a></li>
-                    <li><a href="#main_contact">Contact</a></li>
+                    <li><a href="#main_projects">Proyectos</a></li>
+                    <li><a href="#main_contact">Contacto</a></li>
                     
                 </ul>
         </div>
       
         </nav>
     </header>
+
+    <!--Menu responsive-->
+    <div id="modal-presentacion" class="modal">
+        <div class="modal-contenido">
+           <header>Hola mundo!!
+               <button class="cerrar-modal" data-close="">X</button>
+           </header>
+            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At optio accusantium quidem veritatis accusamus laborum blanditiis, iure labore quos earum temporibus possimus sint quaerat dolores doloremque omnis reiciendis, alias a.
+                Obcaecati eaque blanditiis ipsum quos excepturi. Eius, corrupti. Nisi adipisci quasi officia temporibus fuga doloremque ipsum doloribus, soluta id nulla repellendus? Rem totam ea et maiores. Optio velit iusto nesciunt?</p>
+            </section>
+            <footer>
+                pie de pagina
+            </footer>
+        </div>
+    </div>
     
     
     <main class="main">
@@ -137,7 +153,7 @@
                     </li>
                     <li>
                         <div class="card" >
-                            <a href="" target="_blank"><img src="./diseño/img/blog.jpg" class="card-img-top" ></a>
+                            <a href="https://caromrod.github.io/blog/index.html" target="_blank"><img src="./diseño/img/blog.jpg" class="card-img-top" ></a>
                             <div class="card-body">
                             <h5 class="card-title">Blog</h5>
                             <p class="card-text">Blog de programacion, inspirado en la pagina de Codenotch. Desarrollado por Maria Sosa, Carolina Dominguez y Carolina Rodriguez.</p>
@@ -202,13 +218,13 @@
                     method="POST"
                     >
                     <label>Tu nombre</label>
-                    <input type="text" name="text" required>
+                    <input type="text" name="text" id="txtName" required>
                     <br>
                     <label>Tu email</label>
-                    <input type="email" name="email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                    <input type="email" name="email" id="txtEmail" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                     <br>
                     <label>Tu mensaje</label>
-                    <textarea name="message" placeholder="Escribe tu mensaje aqui..."></textarea>
+                    <textarea name="message " id="txtMessage" placeholder ="Escribe tu mensaje aqui..."></textarea>
                     
                     
                     <button type="submit" id="btnEnviar">Enviar</button>
@@ -228,6 +244,7 @@
             </div>
         </section>
     </main>
-    <script src="./diseño/funciones/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+  
 </body>
 </html>
