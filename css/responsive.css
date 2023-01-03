@@ -58,7 +58,7 @@
 
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
         height: 1cm;
         margin-top: 1cm;
 
@@ -70,62 +70,36 @@
 
     }
 
+
+    .desplegable{
+        position: relative;
+        display: inline-block;
+    }
     
-.modal{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-    padding: 1rem;
-    visibility: hidden;
-    opacity: 0;
-    background: var(--ColorNegro);
-}
-
-.modal-presentacion, .es-visible{
-    opacity: 1;
-    visibility:visible;
-}
-
-
-.modal .modal-contenido{
-    position: relative;
-    max-height:  400px;
-    max-width: 600px;
-    background: var(--ColorBlanco);
-    cursor:default;
-    border-radius: 5px;
-
-}
-
-
-
-
-.modal .modal-contenido header{
+    .desplegable-contenido{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        padding: 12px 16px;
+        min-width: 160px;
+        background-color: var(--ColorBlanco);
+        box-shadow:  0px 10px 10px 0px grey;
+        border-radius: 1px 0 3px 4px;
     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-     
-}
-
-
-.modal .modal-contenido header .cerrar-modal{
-    font-size: 1.5rem;
-    border-radius: 50%;
-}
-
-.grupo-botones{
-    width: 100%;
-    text-align: center;
-
-}
+    }   
+    
+    
+    .desplegable:hover .desplegable-contenido{
+    display: block;
+    
+    }
+    
+    
+    .desplegable2{
+        position: relative;
+        display: inline-block;
+    }
+        
 
 
 
